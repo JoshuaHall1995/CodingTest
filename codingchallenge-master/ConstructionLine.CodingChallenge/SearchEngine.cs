@@ -42,9 +42,6 @@ namespace ConstructionLine.CodingChallenge
             
             foreach (var color in Color.All)
             {
-
-                var test = returnedColours.Where(x => x.Color == color.Name).Select(x => x.Count).SingleOrDefault();
-                var test2 = returnedColours.Where(x => x.Color == color.Name).Select(x => x.Count);
                 colorList.Add(new ColorCount
                 {
                     Color = color,
