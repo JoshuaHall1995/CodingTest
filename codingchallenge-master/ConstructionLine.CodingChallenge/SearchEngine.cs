@@ -42,10 +42,13 @@ namespace ConstructionLine.CodingChallenge
             
             foreach (var color in Color.All)
             {
+
+                var test = returnedColours.Where(x => x.Color == color.Name).Select(x => x.Count).SingleOrDefault();
+                var test2 = returnedColours.Where(x => x.Color == color.Name).Select(x => x.Count);
                 colorList.Add(new ColorCount
                 {
                     Color = color,
-                    Count = returnedColours.Count(x => x.Color == color.Name)
+                    Count = returnedColours.Where(x => x.Color == color.Name).Select(x => x.Count).SingleOrDefault()
                 });
             }
             
@@ -54,7 +57,7 @@ namespace ConstructionLine.CodingChallenge
                 sizeList.Add(new SizeCount
                 {
                     Size = size,
-                    Count = returnedSizes.Count(x => x.Size == size.Name)
+                    Count = returnedSizes.Where(x => x.Size == size.Name).Select(x => x.Count).SingleOrDefault()
                 });
             }
             
