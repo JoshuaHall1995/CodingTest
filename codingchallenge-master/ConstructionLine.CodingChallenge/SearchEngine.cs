@@ -11,6 +11,8 @@ namespace ConstructionLine.CodingChallenge
         {
             _shirts = shirts;
 
+            // Could filter into multiple size and colour lists and then use conditionals. 
+            // Opted out of this due to the performance usually being 22ms so far.
             // TODO: data preparation and initialisation of additional data structures to improve performance goes here.
         }
 
