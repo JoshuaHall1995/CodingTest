@@ -40,6 +40,9 @@ namespace ConstructionLine.CodingChallenge
                     Count = @group.Count()
                 }).ToList();
 
+            // Could be a Linq statement as well but for readability this was avoided
+            // return Size.All.Select(size => new SizeCount {Size = size, Count = returnedSizes.Where(x => x.Size == size.Name).Select(x => x.Count).SingleOrDefault()}).ToList();
+
             foreach (var size in Size.All)
             {
                 sizeList.Add(new SizeCount

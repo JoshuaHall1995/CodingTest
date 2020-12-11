@@ -23,8 +23,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
         [Test]
@@ -43,8 +43,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
         [Test]
@@ -63,8 +63,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
 
@@ -84,8 +84,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
         [Test]
@@ -104,8 +104,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
         [Test]
@@ -124,8 +124,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
 
         [Test]
@@ -144,8 +144,8 @@ namespace ConstructionLine.CodingChallenge.Tests
             var results = searchEngine.Search(searchOptions);
 
             AssertResults(results.Shirts, searchOptions);
-            AssertColorCounts(shirts, searchOptions, results.ColorCounts);
-            AssertSizeCounts(shirts, searchOptions, results.SizeCounts);
+            AssertColorCounts(results.Shirts, searchOptions, results.ColorCounts);
+            AssertSizeCounts(results.Shirts, searchOptions, results.SizeCounts);
         }
         
         private static List<Shirt> BuildBaseShirts()
