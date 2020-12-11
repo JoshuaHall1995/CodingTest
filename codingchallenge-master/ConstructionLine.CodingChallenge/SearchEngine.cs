@@ -77,10 +77,9 @@ namespace ConstructionLine.CodingChallenge
 
         private List<Shirt> FindMatchingShirts(SearchOptions options)
         {
-            var filteredSizeOrders = _shirts.Where(o => options.Sizes.Contains(o.Size));
-            var filteredColourOrders = _shirts.Where(o => options.Colors.Contains(o.Color));
-            var matchingShirts = filteredSizeOrders.Union(filteredColourOrders).ToList();
-            return matchingShirts;
+            var filteredSizeOrders = options.Sizes.Any() ? _shirts.Where(o => options.Sizes.Contains(o.Size)) : _shirts;
+            var matchingShirts = options.Colors.Any() ? _shirts.Where(o => options.Colors.Contains(o.Color)) : filteredSizeOrders;
+            return matchingShirts.ToList();
         }
     }
 }
